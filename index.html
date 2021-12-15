@@ -12,13 +12,13 @@
         function funcion_apellido() {
             var nombre = document.getElementById("nombre").value;
             var apellido = document.getElementById("apellido").value;
-            alert ("Bienvenido " + nombre + apellido)
+            alert ("Bienvenido " + nombre + ' ' + apellido)
         }   
     
 </script>
 <body>
   <h1 class="azul">Practica Bloque 3</h1>
-       Introduce tu nombre <input type="text" id="nombre">
-        Introduce tu apellido <input type="text" id="apellido" onchange="funcion_apellido">
+       Introduce tu nombre: <input type="text" id="nombre">
+        Introduce tu apellido1: <input type="text" id="apellido" onchange="funcion_apellido()">
 </body>
 </html>
