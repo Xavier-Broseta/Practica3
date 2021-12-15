@@ -6,22 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 3</title>
     <link rel="stylesheet" href="style.css">
-        <script>
-            function funcion_nombre() {
-                var nombre = document.getElementById("nombre").value;
-                
-            }
-                function funcion_apellido1() {
-                    var apellido = document.getElementById("apellido").value;
-                    alert ('bienvenido'+ nombre + apellido)
-                }   
-            
-
-        </script>
 </head>
+<!--script javascript  -->
+<script>
+        function funcion_apellido() {
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            alert ("Bienvenido " + nombre + apellido)
+        }   
+    
+</script>
 <body>
   <h1 class="azul">Practica Bloque 3</h1>
        Introduce tu nombre <input type="text" id="nombre">
-        Introduce tu apellido <input type="text" id="apellido">
+        Introduce tu apellido <input type="text" id="apellido" onchange="funcion_apellido">
 </body>
 </html>
